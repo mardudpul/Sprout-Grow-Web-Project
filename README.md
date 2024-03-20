@@ -1,6 +1,4 @@
 # Sprout-Grow-Web-Project
-
-# Sprout-Grow-Web-Project
 ![Logo-Sprout-and-Grow-Company](images/Logo-png/Logo-tagline.png)
 
 ## Project description
