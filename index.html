@@ -23,28 +23,28 @@
 
     <nav>
          <ul class="nav-menu">
-            <li><a href="#">About</a></li>          
-            <li><a href="#">Gardens</a></li>
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li class="nav-li"><a class="link-nav" href="#">About</a></li>          
+            <li class="nav-li"><a class="link-nav" href="#">Gardens</a></li>
+            <li class="nav-li"><a class="link-nav" href="#">Community</a></li>
+            <li class="nav-li"><a class="link-nav" href="#">Contact Us</a></li>
         </ul>
     </nav>
    
-
-<div class="welcome-msg">
-    <h1>Welcome to your <img src="assets/happy-face.svg" alt="happy face icon" height="40px" width="40px"/> happy place</h1><br>
-    <p>We are a greenhouse nursery in Raleigh, North Carolina, specializing in high-quality organic plants. </p>
-
-</div>
-
+    <div class="welcome-msg">
+        <h1>Welcome to your <img src="assets/happy-face.svg" alt="happy face icon" height="40px" width="40px"/> happy place</h1><br>
+        <p>We are a greenhouse nursery in Raleigh, North Carolina,<br> specializing in high-quality organic plants. </p>
+    </div>
 </header>
 
 <body>
-
     <section class="sale">
-        <h2>Sale of the month</h2>
-             <p>Tulips are in bloom! Don't miss the opportunity to come and pick your own Tulips, and received 20% in the total sale</p>
-             <img src="assets/tulips.jpg" alt="tulips of different colors" height="300px" width="500px">
+        <div class="sale-text">
+            <h2>Sale of the month</h2>
+            <p class="text-sale";><b>Tulips are in bloom! </b><br>Don't miss the opportunity to come and pick your own tulips and receive a 20% discount on your total purchase.</p>
+        </div>
+        <div>
+            <img class="sale-img" src="assets/tulips.jpg" alt="tulips of different colors" height="300px" width="500px">
+        </div>        
     </section>
 
     <section class="inventory">
@@ -54,12 +54,12 @@
                     <div class="indoor-inv">
                         <h3>Indoor Garden</h3>
                             <!-- picture with link to catalog -->
-                            <a href=""><img src="assets/long-plant.jpg" alt="indoor plants in a living room" height="400px" width="300px"></a>
+                            <a href=""><img class="link-inv" src="assets/long-plant.jpg" alt="indoor plants in a living room" height="400px" width="300px"></a>
                     </div>
                     <div class="outdoor-pics">
                         <h3>Outdoor Garden</h3>
                             <!-- picture with link to catalog -->
-                            <a href=""><img src="assets/jane-purple-magnolia.jpg" alt="jane magnolia tree leaves" height="400px" width="300px"></a>
+                            <a href=""><img class="link-inv" src="assets/jane-purple-magnolia.jpg" alt="jane magnolia tree leaves" height="400px" width="300px"></a>
                     </div>
                 </aside> 
     </section>
@@ -68,7 +68,7 @@
 <footer>
     <!-- button to go to contact me page -->
 
-    <a class="btn-contacus" href="#">Contac Us</a>
+    <button class="btn-contacus" href="#">Contac Us</button>
 
     <!--Businnes Location -->
 

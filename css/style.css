@@ -5,7 +5,6 @@ body{
     font-family: "Rufina", serif;
     font-weight: 400;
     font-style: normal;
-    color: #688884;
 }
 
 h1{
@@ -36,8 +35,7 @@ p{
     justify-content: center;
     list-style: none;
     margin: 0;
-    background: #A0C9A3;  
-    color: #FFF;
+    background: #6AAA84;  
 }
 
 .nav-menu a{
@@ -48,8 +46,25 @@ p{
 
 ul{
     padding: 0;
+    box-shadow: 0 2px 4px #A6CD37;
 }
 
+.link-nav{
+    color: #fff;
+}
+
+.nav-li{
+    font-family: "Rufina", serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.nav-li a:hover{
+    background-color: #000;
+    color: #A6CD37;
+    border-bottom: 2px solid #A6CD37;
+}
 
 .icons{
     width: 40px;
@@ -65,3 +80,60 @@ header{
     align-items: center;
     justify-content: center;
 }
+
+.welcome-msg{
+    padding: 50px;
+    box-shadow: 0 2px 4px #A6CD37;
+}
+
+.welcome-msg h1,p{
+    margin: 0;
+    padding-top: 20px;
+}
+
+.sale{
+    display: flex;
+    padding: 50px;
+    box-shadow: 0 2px 4px #A6CD37;
+}
+
+.sale h2{
+    margin: 0;
+    padding-top: 20px;
+    text-align: start;
+}
+
+/* I had to add a class on <p> for the sale section, otherwise, was modifying all the <p>'s in the HTML */
+.text-sale{
+    text-align: start;
+}
+
+.sale-img{
+    display: block;
+    padding-left: 10px;
+}
+
+.inventory{
+    padding: 50px;
+    box-shadow: 0 2px 4px #A6CD37;
+}
+
+.inventory h2{
+    margin: 0;
+    padding-top: 20px; 
+}
+
+.inventory-pics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.link-inv{
+    border: 2px solid #6AAA84;
+}
+
+/* .btn-contacus */
+
+
