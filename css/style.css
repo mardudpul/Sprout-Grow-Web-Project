@@ -1,4 +1,4 @@
-body{    
+body {    
     text-align: center;
     margin: 0;
     padding: 0;
@@ -7,29 +7,30 @@ body{
     font-style: normal;
 }
 
-h1{
+h1 {
     font-size: 2.5rem;
     font-weight: 700;
 }
 
-h2{
+h2 {
     font-size: 2rem;
 }
 
-h3{
+h3 {
     font-size: 1.7rem;
 }
 
-p{
+p {
     font-size: 1.25rem;
     color: #000;
     font-family: "Wix Madefor Display", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    line-height: 1.5;
 }
 
-.nav-menu{
+.nav-menu {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -38,102 +39,163 @@ p{
     background: #6AAA84;  
 }
 
-.nav-menu a{
+.nav-menu a {
     text-decoration:none;
     display: block;
     padding: 1.2em;
 }
 
-ul{
+ul {
     padding: 0;
     box-shadow: 0 2px 4px #A6CD37;
 }
 
-.link-nav{
+.link-nav {
     color: #fff;
 }
 
-.nav-li{
+.nav-li {
     font-family: "Rufina", serif;
     font-weight: 700;
     font-size: 1.2rem;
     text-decoration: none;
 }
 
-.nav-li a:hover{
+.nav-li a:hover {
     background-color: #000;
     color: #A6CD37;
-    border-bottom: 2px solid #A6CD37;
 }
 
-.icons{
-    width: 40px;
-    height: 40px;
-}
-
-header{
+header {
     align-content: center;
 }
 
-.logo-top{
+.logo-top {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.welcome-msg{
+.welcome-msg {
     padding: 50px;
     box-shadow: 0 2px 4px #A6CD37;
 }
 
-.welcome-msg h1,p{
+.welcome-msg h1 {
     margin: 0;
     padding-top: 20px;
 }
 
-.sale{
+.sale-flex-container {
     display: flex;
     padding: 50px;
     box-shadow: 0 2px 4px #A6CD37;
 }
 
-.sale h2{
+.sale-flex-container h2 {
     margin: 0;
     padding-top: 20px;
     text-align: start;
 }
 
-/* I had to add a class on <p> for the sale section, otherwise, was modifying all the <p>'s in the HTML */
-.text-sale{
+.text-left-align {
     text-align: start;
 }
 
-.sale-img{
+.sale-img {
     display: block;
     padding-left: 10px;
 }
 
-.inventory{
+.inventory {
     padding: 50px;
     box-shadow: 0 2px 4px #A6CD37;
 }
 
-.inventory h2{
+.inventory h2 {
     margin: 0;
     padding-top: 20px; 
 }
 
-.inventory-pics{
+.inventory-pics-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 20px;
 }
 
-.link-inv{
+.link-inv {
     border: 2px solid #6AAA84;
 }
 
-/* .btn-contacus */
+.footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+    padding: 50px;
+}
 
+.footer-links a {
+    text-decoration:none;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #000;
+}
 
+.footer-links a:hover {
+    background-color: #000;
+    color: #A6CD37;
+    border-bottom: 2px solid #A6CD37;
+}
+
+.footer-company-name {
+    font-size: 1rem;
+}
+
+.footer-center h3 {
+    margin: 0;
+    padding-top: 20px;
+}
+
+.footer-right h3 {
+    margin: 0;
+    padding-top: 20px;
+}
+
+/* social media icons */
+.icons {
+    padding: 2px 20px 0 20px;    
+}
+
+/* icons center contact */
+.icons-center {
+    padding-right: 10px;
+}
+
+.media-icons a {
+    font-size: 1rem;
+    }
+
+.contact-text-font-size {
+    font-size: 1rem;
+    margin: 2px;
+}
+
+.hours-text-font-size{
+    font-size: 1rem;
+    margin: 2px;
+}
+
+/* media query */
+
+@media (max-width: 880px) {
+   
+   .footer-flex{ 
+    display: grid;
+    justify-self: baseline;
+    text-align: left;
+    }
+
+  }
