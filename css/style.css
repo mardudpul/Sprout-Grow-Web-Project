@@ -5,6 +5,7 @@ body {
     font-family: "Rufina", serif;
     font-weight: 400;
     font-style: normal;
+    background-color: #D9EDBF;
 }
 
 h1 {
@@ -29,6 +30,8 @@ p {
     font-style: normal;
     line-height: 1.5;
 }
+
+/* Header*/
 
 .nav-menu {
     display: flex;
@@ -55,8 +58,8 @@ ul {
 }
 
 .nav-li {
-    font-family: "Rufina", serif;
-    font-weight: 700;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 500;
     font-size: 1.2rem;
     text-decoration: none;
 }
@@ -70,11 +73,19 @@ header {
     align-content: center;
 }
 
-.logo-top {
+.logo-container {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
+
+.logo-company{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Welcome message header */
 
 .welcome-msg {
     padding: 50px;
@@ -86,13 +97,25 @@ header {
     padding-top: 20px;
 }
 
-.sale-flex-container {
-    display: flex;
-    padding: 50px;
-    box-shadow: 0 2px 4px #A6CD37;
+.external-link-maps{
+    color: #000;
 }
 
-.sale-flex-container h2 {
+.water-plan-icon{
+    width: 120px;
+    height: 120px;
+
+}
+
+/* Sale section */
+
+.sale-section {
+    padding: 50px;
+    box-shadow: 0 2px 4px #A6CD37;
+    overflow: hidden;
+}
+
+.sale-section h2 {
     margin: 0;
     padding-top: 20px;
     text-align: start;
@@ -102,10 +125,32 @@ header {
     text-align: start;
 }
 
-.sale-img {
-    display: block;
-    padding-left: 10px;
+.external-link-tulips{
+    text-decoration: none;
+    color: #000;
 }
+
+.tulip-icon{
+    width: 40px;
+    height: 40px;
+    align-items: center;
+}
+
+.sale-img {
+    float: left;
+    padding-right: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+.sale-img-2 {
+    float: inherit;
+    padding-top: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Inventory section */
 
 .inventory {
     padding: 50px;
@@ -125,7 +170,16 @@ header {
 }
 
 .link-inv {
+    max-width: 100%;
+    height: auto;
     border: 2px solid #6AAA84;
+}
+
+/* Footer */
+
+.logo-footer{
+    max-width: 100%;
+    height: auto;
 }
 
 .footer-flex {
@@ -134,14 +188,17 @@ header {
     justify-content: space-around;
     text-align: left;
     padding: 50px;
+    background: linear-gradient(to right, #fff -30%,  #6AAA84);
+    color: #fff;
 }
 
 .footer-links a {
+    font-family: "Wix Madefor Display", sans-serif;
     text-decoration:none;
     padding: 0;
     margin: 0;
     font-size: 1rem;
-    color: #000;
+    color: #6AAA84;
 }
 
 .footer-links a:hover {
@@ -152,50 +209,69 @@ header {
 
 .footer-company-name {
     font-size: 1rem;
+    margin-top:10px;
+    color: #fff;
 }
 
 .footer-center h3 {
     margin: 0;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .footer-right h3 {
     margin: 0;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 /* social media icons */
 .icons {
-    padding: 2px 20px 0 20px;    
-}
+    padding: 10px 10px 0 10px;  
+    color: #fff; 
+    
+  }
 
 /* icons center contact */
 .icons-center {
     padding-right: 10px;
+    
 }
 
 .media-icons a {
     font-size: 1rem;
-    }
+}
 
 .contact-text-font-size {
     font-size: 1rem;
     margin: 2px;
+    color: #fff;
+}
+
+.external-link {
+    font-size: 1rem;
+    margin: 2px;
+    color: #fff;
+}
+
+.ext-link-decor{
+    text-decoration: none;
 }
 
 .hours-text-font-size{
     font-size: 1rem;
     margin: 2px;
+    color: #fff;
 }
 
-/* media query */
+
+/* media query footer */
 
 @media (max-width: 880px) {
    
    .footer-flex{ 
     display: grid;
-    justify-self: baseline;
-    text-align: left;
+    text-align: center; 
+    padding: 10px;
+    background: linear-gradient(to bottom, #fff -25%,  #6AAA84);
     }
 
   }
