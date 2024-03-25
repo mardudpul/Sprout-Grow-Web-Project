@@ -1,5 +1,5 @@
 # Sprout & Grow Website Project
-![Logo-Sprout-and-Grow-Company](assets/logo-tagline.png)
+![Logo-Sprout-and-Grow-Company](assets/logo-tailgate.png)
 
 ## Project description
  This website is a project for my Web Development Tools class. I'm tasked with creating a functional website for a fictitious company called Sprout & Grow, which represents a greenhouse nursery in Raleigh, NC. The company specializes in offering high-quality organic plants. 
