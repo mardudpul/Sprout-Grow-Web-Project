@@ -21,13 +21,12 @@
     />
   </head>
   <header>
-    <aside class="logo-top">
+    <aside class="logo-container">
       <a href="#"
         ><img
+          class="logo-company"
           src="assets/logo-tailgate.png"
           alt="Company logo Sprout & Grow"
-          height="300px"
-          width="300px"
       /></a>
     </aside>
 
@@ -36,45 +35,56 @@
         <li class="nav-li"><a class="link-nav" href="#">About</a></li>
         <li class="nav-li"><a class="link-nav" href="#">Gardens</a></li>
         <li class="nav-li"><a class="link-nav" href="#">Community</a></li>
-        <li class="nav-li"><a class="link-nav" href="#">Contact Us</a></li>
+        <li class="nav-li"><a class="link-nav" href="#">Contact us</a></li>
       </ul>
     </nav>
 
     <div class="welcome-msg">
       <h1>Welcome to your happy place</h1>
+      <img class="water-plan-icon" src="assets/water-plants.svg" alt="watering plants icon">
       <p>
         We are a greenhouse nursery in Raleigh, North Carolina<br />
-        specializing in high-quality organic plants.
+        specializing in high-quality <i>organic plants.</i>
       </p>
     </div>
   </header>
 
   <body>
-    <section class="sale-flex-container">
-      <div class="sale-text">
-        <h2>Sale of the month</h2>
-        <p class="text-left-align">
-          <b>Tulips are in bloom! </b><br />Don't miss the opportunity to come
-          and pick your own tulips and receive a 20% discount on your total
-          purchase.
-        </p>
-      </div>
-      <div>
+    <section class="sale-section">
+      <h2>
+        Sale of the month
         <img
           class="sale-img"
-          src="assets/tulips.jpg"
+          src="assets/tulips-sale-pic.jpeg"
           alt="tulips of different colors"
-          height="300px"
-          width="500px"
         />
-      </div>
+      </h2>
+      <p class="text-left-align">
+        <b>Tulips are in bloom!</b><br />
+        Don't miss the opportunity to come and pick your own tulips and receive
+        a 20% discount on your total purchase. <a class="external-link-maps" href="https://www.google.com/maps">Visit our store.</a> 
+      </p>
+
+      <a
+        class="external-link-tulips"
+        href="https://plants.ces.ncsu.edu/plants/tulipa/"
+      >
+        <h3 class="text-left-align">
+          Learn about tulips here
+          <img
+            class="tulip-icon"
+            src="assets/tulip-icon.svg"
+            alt="tulip icon"
+          />
+        </h3>
+      </a>
     </section>
 
     <section class="inventory">
       <h2>Our latest inventory</h2>
       <p>
-        Visit our location to buy our beautiful plants. <br> You can find our most
-        updated catalog here!
+        Visit our location to buy our beautiful plants.<br />
+        You can find our most updated inventory here!
       </p>
       <aside class="inventory-pics-flex">
         <div>
@@ -83,10 +93,8 @@
           <a href="">
             <img
               class="link-inv"
-              src="assets/long-plant.jpg"
+              src="assets/indoor-plants-resized.jpg"
               alt="indoor plants in a living room"
-              height="400px"
-              width="300px"
             />
           </a>
         </div>
@@ -96,10 +104,8 @@
           <a href="">
             <img
               class="link-inv"
-              src="assets/jane-purple-magnolia.jpg"
-              alt="jane magnolia tree leaves"
-              height="400px"
-              width="300px"
+              src="assets/starters-1-resized.jpg"
+              alt="small starters plant"
             />
           </a>
         </div>
@@ -107,23 +113,21 @@
     </section>
   </body>
 
+  <!-- Footer section -->
+
   <footer class="footer-flex">
     <div class="footer-left">
       <a href="#">
         <img
-          src="assets/logo-tailgate.png"
-          alt="Company logo Sprout & Grow"
-          height="200px"
-          width="200px"
+          class="logo-footer"
+          src="assets/Logo-Sprout&Grow-250px.png"
+          alt="Company logo"
         />
       </a>
       <div class="footer-links">
-        <a href="#">Home</a> | 
-        <a href="">About</a> |
-        <a href="">Catalog</a> |
-        <a href="">Community</a>
+        <a href="#">Home</a> | <a href="#">About</a> | <a href="#">Gardens</a> |
+        <a href="#">Community</a>
       </div>
-      <p class="footer-company-name">Sprout & Grow © 2024</p>
     </div>
 
     <div class="footer-center">
@@ -131,7 +135,7 @@
       <p class="contact-text-font-size">
         <img
           class="icons-center"
-          src="assets/map-icon.svg"
+          src="assets/location-white.svg"
           alt="map icon"
           width="30px"
           height="30px"
@@ -141,7 +145,7 @@
       <p class="contact-text-font-size">
         <img
           class="icons-center"
-          src="assets/phone-icon-2.svg"
+          src="assets/phone-icon-white.svg"
           alt="phone icon"
           width="30px"
           height="30px"
@@ -151,13 +155,30 @@
       <p class="contact-text-font-size">
         <img
           class="icons-center"
-          src="assets/email-icon.svg"
+          src="assets/email-icon-white.svg"
           alt="email icon"
           width="30px"
           height="30px"
         />sprout&grow@greenplants.com
       </p>
 
+      <!-- External link -->
+      <h3>Resources</h3>
+
+      <a
+        class="ext-link-decor"
+        href="https://plants.ces.ncsu.edu/find_a_plant/"
+      >
+        <p class="external-link">
+          <img
+            class="icons-center"
+            src="assets/hand-plant-icon-white.svg"
+            alt="plant tool icon"
+            width="30px"
+            height="30px"
+          />Plant tool NC State University
+        </p>
+      </a>
     </div>
 
     <div class="footer-right">
@@ -167,7 +188,7 @@
         <a href="https://www.facebook.com"
           ><img
             class="icons"
-            src="assets/face-icon-f.svg"
+            src="assets/facebook-circle-logo.svg"
             alt="facebook icon"
             width="45px"
             height="45px"
@@ -185,9 +206,11 @@
       <div class="opening-hours">
         <h3>Open Hours</h3>
         <p class="hours-text-font-size">
-          Monday-Friday 9 a.m. - 5 p.m. <br />Saturdays 9 a.m. - 3 p.m.
-          <br />Sundays <b> Closed </b>
+          Monday-Friday 9 a.m. - 5 p.m.<br />
+          Saturdays 9 a.m. - 3 p.m.<br />
+          Sundays <b> Closed </b>
         </p>
+        <p class="footer-company-name">Sprout & Grow © 2024</p>
       </div>
     </div>
   </footer>
