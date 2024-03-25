@@ -39,7 +39,7 @@ p {
     justify-content: center;
     list-style: none;
     margin: 0;
-    background: #6AAA84;  
+    background: linear-gradient(to bottom, #fff -70%,  #2B4A39); 
 }
 
 .nav-menu a {
@@ -83,6 +83,7 @@ header {
 .logo-company{
     max-width: 100%;
     height: auto;
+    padding: 20px;
 }
 
 /* Welcome message header */
@@ -180,6 +181,7 @@ header {
 .logo-footer{
     max-width: 100%;
     height: auto;
+    padding: 20px;
 }
 
 .footer-flex {
@@ -188,7 +190,7 @@ header {
     justify-content: space-around;
     text-align: left;
     padding: 50px;
-    background: linear-gradient(to right, #fff -30%,  #6AAA84);
+    background: linear-gradient(to bottom, #fff -70%,  #2B4A39);
     color: #fff;
 }
 
@@ -198,7 +200,7 @@ header {
     padding: 0;
     margin: 0;
     font-size: 1rem;
-    color: #6AAA84;
+    color: #fff;
 }
 
 .footer-links a:hover {
@@ -271,7 +273,16 @@ header {
     display: grid;
     text-align: center; 
     padding: 10px;
-    background: linear-gradient(to bottom, #fff -25%,  #6AAA84);
+    background: linear-gradient(to bottom, #fff -50%,  #2B4A39);
+    }
+
+    .sale-section h2{
+        text-align: center; 
+    }
+
+    .sale-img{
+        align-items: center;
+        padding: 20px;
     }
 
   }
