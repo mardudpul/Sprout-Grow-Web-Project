@@ -42,7 +42,19 @@ p {
     background: linear-gradient(to bottom, #fff -70%,  #2B4A39); 
 }
 
+.dropdown {
+    display: none;
+    position: absolute;
+    background: linear-gradient(to bottom, #fff -70%,  #2B4A39); 
+}
+
 .nav-menu a {
+    text-decoration:none;
+    display: block;
+    padding: 1.2em;
+}
+
+.dropdown a {
     text-decoration:none;
     display: block;
     padding: 1.2em;
@@ -64,17 +76,20 @@ ul {
     text-decoration: none;
 }
 
-.nav-li a:hover {
+.nav-li a:hover .dropdown:hover {
+    display: block;
     background-color: #000;
     color: #A6CD37;
 }
 
+/* text header section */
 header {
     align-content: center;
 }
 
+/* logo header */
 .logo-container {
-    display: flex;
+    display: flex;  
     align-items: center;
     justify-content: center;
     
@@ -210,7 +225,7 @@ header {
 }
 
 .footer-company-name {
-    font-size: 1rem;
+    font-size: 0.7rem;
     margin-top:10px;
     color: #fff;
 }
@@ -285,4 +300,35 @@ header {
         padding: 20px;
     }
 
+  }
+
+
+  /* about page */
+
+  .water-plant-icon{
+    width: 30px;
+    height: 30px;
+  }
+
+  /* titles links header */
+
+  .titles-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    padding: 20px;
+    box-shadow: 0 2px 4px #A6CD37;    
+  }
+
+  .about-list a {
+    text-decoration: none;
+    text-align: left;
+    color: #000;
+  }
+
+  .about-ul {
+    padding: 0;
+    box-shadow: none;
+    list-style-type: circle;
   }
