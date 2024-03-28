@@ -60,10 +60,10 @@ p {
     padding: 1.2em;
 }
 
-ul {
+.nav-menu {
     padding: 0;
     box-shadow: 0 2px 4px #A6CD37;
-}
+} 
 
 .link-nav {
     color: #fff;
@@ -76,7 +76,7 @@ ul {
     text-decoration: none;
 }
 
-.nav-li a:hover .dropdown:hover {
+.nav-li a:hover {
     display: block;
     background-color: #000;
     color: #A6CD37;
@@ -204,7 +204,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: left;
-    padding: 50px;
+    padding: 25px;
     background: linear-gradient(to bottom, #fff -70%,  #2B4A39);
     color: #fff;
 }
@@ -305,9 +305,15 @@ header {
 
   /* about page */
 
-  .water-plant-icon{
+  /* icon for the about page */
+  .about-icon{
     width: 30px;
     height: 30px;
+  }
+
+  .about-icon-book{
+    width: 40px;
+    height: 40px;
   }
 
   /* titles links header */
@@ -330,5 +336,36 @@ header {
   .about-ul {
     padding: 0;
     box-shadow: none;
-    list-style-type: circle;
+    list-style-type: none;
   }
+
+  /* mission section */
+
+  #mission-section h2 {
+    text-align: left;
+  }
+
+  #mission-section {
+    margin: 0;
+    padding: 20px;
+    box-shadow: 0 2px 4px #A6CD37; 
+  }
+
+  #why-section {
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+    box-shadow: 0 2px 4px #A6CD37; 
+  }
+
+  .why-li {
+    list-style: none;
+  }
+
+  #services-section {
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+    box-shadow: 0 2px 4px #A6CD37; 
+  }
+
