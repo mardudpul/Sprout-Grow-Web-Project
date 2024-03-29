@@ -154,17 +154,12 @@ header {
 
 .sale-img {
     float: left;
+    clear: both;
     padding-right: 30px;
     max-width: 100%;
     height: auto;
 }
 
-.sale-img-2 {
-    float: inherit;
-    padding-top: 30px;
-    max-width: 100%;
-    height: auto;
-}
 
 /* Inventory section */
 
@@ -284,88 +279,115 @@ header {
 
 @media (max-width: 880px) {
    
-   .footer-flex{ 
-    display: grid;
-    text-align: center; 
-    padding: 10px;
-    background: linear-gradient(to bottom, #fff -50%,  #2B4A39);
+   .footer-flex { 
+       display: grid;
+       text-align: center; 
+       padding: 10px;
+       background: linear-gradient(to bottom, #fff -50%,  #2B4A39);
     }
 
-    .sale-section h2{
-        text-align: center; 
+    .sale-section h2 {
+      text-align: center; 
     }
 
-    .sale-img{
-        align-items: center;
-        padding: 20px;
+    .sale-img {
+      display: flex;
+      max-width: 100%;
+      height: auto;
+      padding: 20px 0 20px 0;
     }
 
-  }
+    /* text in the sale section */
+
+    .text-left-align {
+        text-align: center;
+    }
+
+}
 
 
-  /* about page */
+  /* ABOUT PAGE */
 
-  /* icon for the about page */
-  .about-icon{
-    width: 30px;
-    height: 30px;
-  }
+ /* mission & services in the same flexbox */
 
-  .about-icon-book{
-    width: 40px;
-    height: 40px;
-  }
-
-  /* titles links header */
-
-  .titles-nav {
+ /* .mission-services-flex {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
-    padding: 20px;
-    box-shadow: 0 2px 4px #A6CD37;    
-  }
-
-  .about-list a {
-    text-decoration: none;
+    justify-content: space-around;
     text-align: left;
-    color: #000;
-  }
-
-  .about-ul {
-    padding: 0;
-    box-shadow: none;
-    list-style-type: none;
-  }
+    box-shadow: 0 2px 4px #A6CD37; 
+ } */
 
   /* mission section */
 
-  #mission-section h2 {
-    text-align: left;
-  }
-
-  #mission-section {
-    margin: 0;
+ .mission-section {
     padding: 20px;
     box-shadow: 0 2px 4px #A6CD37; 
   }
 
-  #why-section {
-    text-align: left;
-    margin: 0;
+  .tex-mission {
+ justify-content: center;
+  }
+
+  .picture-about-1 {
+    float: inherit;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+    border: 1mm solid rgba(27, 45, 22, 0.6);
+}
+
+  
+  /* services section */
+
+  .services-section {
     padding: 20px;
-    box-shadow: 0 2px 4px #A6CD37; 
+    box-shadow: 0 2px 4px #A6CD37;    
+    overflow: hidden;
+
+ }
+
+  .picture-about-2 {
+    float: right;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+    border: 1mm solid rgba(27, 45, 22, 0.6);
+ }
+
+  .services-ul {
+    text-align: start;
+  }
+
+
+  /* why section */
+
+  .why-section {
+    text-align: left;
+    padding: 20px;
+ }
+
+  .why-section h2 {
+    text-align: center;
   }
 
   .why-li {
     list-style: none;
+    padding-left: 10px;
   }
 
-  #services-section {
-    text-align: left;
-    margin: 0;
-    padding: 20px;
-    box-shadow: 0 2px 4px #A6CD37; 
-  }
+  .picture-about-3 {
+    float: left;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+    box-sizing: border-box;
+    margin-right: 10px;
+    border: 1mm solid rgba(27, 45, 22, 0.6);
+ }
+
+
+
+
+
+
 
