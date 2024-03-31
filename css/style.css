@@ -42,19 +42,24 @@ p {
     background: linear-gradient(to bottom, #fff -70%,  #2B4A39); 
 }
 
-.dropdown {
-    display: none;
+.dropdown:hover .dropdown-content {
+    display: block;
+    text-decoration: none;
     position: absolute;
     background: linear-gradient(to bottom, #fff -70%,  #2B4A39); 
 }
 
-.nav-menu a {
-    text-decoration:none;
-    display: block;
-    padding: 1.2em;
+.dropdown-content {
+    display: none;
+    list-style-type: none;
 }
 
-.dropdown a {
+ul.dropdown-content {
+    padding: 0;
+    text-align: left;
+}
+
+.nav-menu a {
     text-decoration:none;
     display: block;
     padding: 1.2em;
@@ -77,9 +82,9 @@ p {
 }
 
 .nav-li a:hover {
-    display: block;
     background-color: #000;
     color: #A6CD37;
+    
 }
 
 /* text header section */
@@ -155,9 +160,12 @@ header {
 .sale-img {
     float: left;
     clear: both;
-    padding-right: 30px;
     max-width: 100%;
     height: auto;
+    border-radius: 10%;
+    box-sizing: border-box;
+    margin-right: 30px;
+    border: 1mm solid rgba(27, 45, 22, 0.6);
 }
 
 
@@ -183,7 +191,9 @@ header {
 .link-inv {
     max-width: 100%;
     height: auto;
-    border: 2px solid #6AAA84;
+    border-radius: 10%;
+    box-sizing: border-box;
+    border: 1mm solid rgba(27, 45, 22, 0.6);
 }
 
 /* Footer */
@@ -308,15 +318,6 @@ header {
 
   /* ABOUT PAGE */
 
- /* mission & services in the same flexbox */
-
- /* .mission-services-flex {
-    display: flex;
-    justify-content: space-around;
-    text-align: left;
-    box-shadow: 0 2px 4px #A6CD37; 
- } */
-
   /* mission section */
 
  .mission-section {
@@ -385,8 +386,115 @@ header {
     border: 1mm solid rgba(27, 45, 22, 0.6);
  }
 
+ /* MEDIA QUIERY ABOUT PAGE */
+
+ @media (max-width: 880px) {
+ 
+
+    .services-section {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .picture-about-2 {
+        float: inherit;
+        margin-left: 0;
+        margin-bottom: 8px;
+    }
+    
+    .why-section {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .picture-about-3 {
+        margin-left: 0;
+    }
+
+    ul.why-section-ul {
+        padding: 0;
+    }
+
+    
+ }
 
 
+ /* INDOOR PLANTS PAGE */
+
+ .indoor-plants-container {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px;
+ }
+
+ /*this make the benefits indoor plants align left  */
+ .list-indoor-plants {
+    text-align: left;
+    
+ }
+
+ .img-main-indoor {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+    margin-right: 30px;
+    border: 1mm solid rgba(27, 45, 22, 0.6);
+ }
+
+ /* image gallery container */
+
+ .indoor-img-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+ }
+
+ .gallery-img {
+    max-width: 100%;
+    height: auto;
+ }
+ 
+
+ /* OUTDOOR PLANTS PAGE */
+
+ .list-outdoor-plants {
+    text-align: left;
+    
+ }
+
+ .img-main-outdoor {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10%;
+    margin-right: 30px;
+    border: 1mm solid rgba(27, 45, 22, 0.6);
+ }
+
+ /* image gallery container outdoors */
+
+ .outdoor-img-gallery {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+ }
+
+ .gallery-img {
+    max-width: 100%;
+    height: auto;
+ }
+
+    
+ 
 
 
 
