@@ -24,7 +24,7 @@
 
     <!-- logo header -->
     <aside class="logo-container">
-      <a href="#"
+      <a href="index.html"
         ><img
           class="logo-company"
           src="assets/logo-updated-round-300px.png"
@@ -35,97 +35,64 @@
     <!-- navigation menu -->
     <nav>
       <ul class="nav-menu">
+        <li class="nav-li"><a class="link-nav" href="index.html">Home</a></li>
         <li class="nav-li"><a class="link-nav" href="about.html">About</a></li>
-        <li class="nav-li"><a class="link-nav" href="plants.html">Plants</a></li>
-        <!-- dropdown menu - no working yet-->
-        <ul class="dropdown">
-          <li class="nav-li"><a class="link-nav" href="indoor-plants.html">Indoor Plants</a></li>
-          <li class="nav-li"><a class="link-nav" href="outdoor-plants.html">Outdoor Plants</a></li>
-        </ul>
+        <li class="nav-li dropdown">
+          <a class="link-nav" href="plants.html">Plants</a>
+          <ul class="dropdown-content">
+            <li class="nav-li"><a class="link-nav" href="indoor-plants.html">Indoor Plants</a></li>
+            <li class="nav-li"><a class="link-nav" href="outdoor-plants.html">Outdoor Plants</a></li>
+          </ul>
+        </li>
         <li class="nav-li"><a class="link-nav" href="community.html">Community</a></li>
         <li class="nav-li"><a class="link-nav" href="contact-us.html">Contact us</a></li>
       </ul>
     </nav>
 
-    <!-- welcome message in the header -->
-    <div class="welcome-msg">
-      <h1>Welcome to your happy place</h1>
-      <img class="water-plan-icon" src="assets/water-plants.svg" alt="watering plants icon">
-      <p>
-        We are a greenhouse nursery in Raleigh, North Carolina<br>
-        specializing in high-quality <i>organic plants.</i>
-      </p>
-    </div>
-  </header>
-
+    
   <body>
 
-    <!-- sale section -->
-    <section class="sale-section">
-      <h2>
-        Sale of the month
-        <img
-          class="sale-img"
-          src="assets/tulips-sale-pic.jpeg"
-          alt="tulips of different colors"
-        />
-      </h2>
-      <p class="text-left-align">
-        <b>Tulips are in bloom!</b><br>
-        Don't miss the opportunity to come and pick your own tulips and receive
-        a 20% discount on your total purchase. 
-        <!-- external link to google maps -->
-        <a class="external-link-maps" href="https://www.google.com/maps">Visit our store.</a> 
-      </p>
 
-      <!-- external link NC State University resources -->
-      <a
-        class="external-link-tulips"
-        href="https://plants.ces.ncsu.edu/plants/tulipa/"
-      >
-        <h3 class="text-left-align">
-          Learn about tulips here
-          <img
-            class="tulip-icon"
-            src="assets/tulip-icon.svg"
-            alt="tulip icon"
-          >
-        </h3>
-      </a>
+    <!-- Indoor Plants Seccion -->
+    <section class="indoor-plants-container">
+      
+      <img class="img-main-indoor" src="assets/Differents-plants-house-resized.jpg" alt="different indoor house plants">
+      <div>
+      <h3>Indoor Plants</h3>  
+      <p>Benefits of having plants inside your home</p> 
+      <ul class="list-indoor-plants">
+        <li><p>Improved Air Quality</p></li>
+        <li><p>Enhanced Mood and Well-being </p></li>
+        <li><p>Increased Productivity and Concentration</p></li>
+        <li><p>Natural Humidity Regulation</p></li>
+        <li><p>Aesthetic Appeal</p></li>
+        <li><p>Connection with Nature</p></li>
+      </ul>       
+    </div>           
+    
     </section>
 
-    <!-- inventory seccion -->
-    <section class="inventory">
-      <h2>Our latest inventory</h2>
-      <p>
-        Visit our location to buy our beautiful plants.<br>
-        You can find our most updated inventory here!
-      </p>
-      <aside class="inventory-pics-flex">
-        <div>
-          <h3>Indoor Plants</h3>
-          <!-- picture with link to catalog -->
-          <a href="">
-            <img
-              class="link-inv"
-              src="assets/indoor-plants-resized.jpg"
-              alt="indoor plants in a living room"
-            >
-          </a>
-        </div>
-        <div>
-          <h3>Outdoor Plants</h3>
-          <!-- picture with link to catalog -->
-          <a href="">
-            <img
-              class="link-inv"
-              src="assets/starters-1-resized.jpg"
-              alt="small starters plant"
-            >
-          </a>
-        </div>
-      </aside>
-    </section>
+    
+    <h2>Newest Plants in Our Shop</h2>
+    
+    <div class="indoor-img-gallery">
+
+      <figure>
+        <img class="gallery-img" src="assets/asparragus-fern-1-R.jpg" alt="asparragus plant">
+        <figcaption>Asparragus plant</figcaption>
+      </figure>
+      
+      <figure>
+        <img class="gallery-img" src="assets/calathea-1-R.jpg" alt="calathea plant">
+        <figcaption>Calathea plant</figcaption>
+      </figure>
+      
+      <figure>
+        <img class="gallery-img" src="assets/peperomia-1-R.jpg" alt="peperomia plant">
+        <figcaption>Peperomia plant</figcaption>
+      </figure>
+            
+    </div>
   </body>
 
   <!-- Footer section -->
@@ -133,7 +100,7 @@
     <!-- footer left flex item -->
     <div class="footer-left">
       <!--logo footer smaller  -->
-      <a href="#">
+      <a href="index.html">
         <img
           class="logo-footer"
           src="assets/Logo-updated-small.png"
@@ -142,8 +109,8 @@
       </a>
       <!-- navigation menu footer -->
       <div class="footer-links">
-        <a href="#">Home</a> | <a href="#">About</a> | <a href="#">Gardens</a> |
-        <a href="#">Community</a>
+        <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="plants.html">Plants</a> |
+        <a href="community.html">Community</a>
       </div>
     </div>
     
