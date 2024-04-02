@@ -25,7 +25,6 @@ p {
     font-size: 1.25rem;
     color: #000;
     font-family: "Wix Madefor Display", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     line-height: 1.5;
@@ -122,10 +121,10 @@ header {
     color: #000;
 }
 
-.water-plan-icon{
-    width: 120px;
-    height: 120px;
-
+.raleigh-img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0 0 0;
 }
 
 /* Sale section */
@@ -162,10 +161,7 @@ header {
     clear: both;
     max-width: 100%;
     height: auto;
-    border-radius: 10%;
-    box-sizing: border-box;
     margin-right: 30px;
-    border: 1mm solid rgba(27, 45, 22, 0.6);
 }
 
 
@@ -191,9 +187,7 @@ header {
 .link-inv {
     max-width: 100%;
     height: auto;
-    border-radius: 10%;
-    box-sizing: border-box;
-    border: 1mm solid rgba(27, 45, 22, 0.6);
+    
 }
 
 /* Footer */
@@ -249,13 +243,23 @@ header {
 .icons {
     padding: 10px 10px 0 10px;  
     color: #fff; 
-    
   }
+
+.icon-facebook {
+    width: 45px;
+    height: 45px;
+}
+
+.icon-x {
+    width: 40px;
+    height: 45px;
+}
 
 /* icons center contact */
 .icons-center {
     padding-right: 10px;
-    
+    width: 30px;
+    height: 30px;    
 }
 
 .media-icons a {
@@ -304,7 +308,7 @@ header {
       display: flex;
       max-width: 100%;
       height: auto;
-      padding: 20px 0 20px 0;
+      margin: 20px 0 20px 0;
     }
 
     /* text in the sale section */
@@ -442,9 +446,7 @@ header {
     flex-wrap: wrap;
     max-width: 100%;
     height: auto;
-    border-radius: 10%;
     margin-right: 30px;
-    border: 1mm solid rgba(27, 45, 22, 0.6);
  }
 
  /* image gallery container */
@@ -474,9 +476,7 @@ header {
     flex-wrap: wrap;
     max-width: 100%;
     height: auto;
-    border-radius: 10%;
     margin-right: 30px;
-    border: 1mm solid rgba(27, 45, 22, 0.6);
  }
 
  /* image gallery container outdoors */
