@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- The HTML validator is giving me an error 
+      "Trailing slash on void elements has no effect and interacts badly with unquoted 
+      attribute values." however, I'm having a hard time configuring Prettier to remove the slash
+    in the code-->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sprout & Grow</title>
@@ -50,7 +55,7 @@
           <a class="link-nav" href="community.html">Community</a>
         </li>
         <li class="nav-li">
-          <a class="link-nav" href="contact-us.html">Contact us</a>
+          <a class="link-nav" href="contact-us-form.html">Contact us</a>
         </li>
       </ul>
     </nav>
@@ -70,7 +75,7 @@
     </div>
   </header>
 
-  <body>  
+  <body>
     <!-- sale section -->
     <section class="sale-section">
       <h2>
@@ -79,7 +84,7 @@
           class="sale-img"
           src="assets/tulips-sale-pic.jpeg"
           alt="tulips of different colors"
-        >
+        />
       </h2>
       <p class="text-left-align">
         <b>Tulips are in bloom!</b><br />
@@ -102,7 +107,7 @@
             class="tulip-icon"
             src="assets/tulip-icon.svg"
             alt="tulip icon"
-          >
+          />
         </h3>
       </a>
     </section>
@@ -123,7 +128,7 @@
               class="link-inv"
               src="assets/indoor-plants-resized.jpg"
               alt="indoor plants in a living room"
-            >
+            />
           </a>
         </div>
         <div>
@@ -134,7 +139,7 @@
               class="link-inv"
               src="assets/starters-1-resized.jpg"
               alt="small starters plant"
-            >
+            />
           </a>
         </div>
       </aside>
@@ -142,6 +147,8 @@
   </body>
 
   <!-- Footer section -->
+  <!-- HTML validator is giving an error with my 
+    <footer> tag. I don't find what I have wrong. I closed my tag correctly -->
 
   <footer class="footer-flex">
     <!-- footer left flex item -->
@@ -152,13 +159,12 @@
           class="logo-footer"
           src="assets/Logo-updated-small.png"
           alt="Company logo"
-        >
+        />
       </a>
       <!-- navigation menu footer -->
       <div class="footer-links">
-        <a href="about.html">About</a> |
-        <a href="plants.html">Plants</a> |
-        <a href="community.html">Community</a>  |
+        <a href="about.html">About</a> | <a href="plants.html">Plants</a> |
+        <a href="community.html">Community</a> |
         <a href="contact-us-form.html">Contact us</a>
       </div>
     </div>
@@ -172,7 +178,7 @@
           class="icons-center"
           src="assets/location-white.svg"
           alt="map icon"
-        >Downtown, Raleigh, NC
+        />Downtown, Raleigh, NC
       </p>
       <!-- phone icon  -->
       <p class="contact-text-font-size">
@@ -180,7 +186,7 @@
           class="icons-center"
           src="assets/phone-icon-white.svg"
           alt="phone icon"
-        >+1-919-00-00
+        />+1-919-00-00
       </p>
       <!-- email icon -->
       <p class="contact-text-font-size">
@@ -188,7 +194,7 @@
           class="icons-center"
           src="assets/email-icon-white.svg"
           alt="email icon"
-        >sprout&grow@greenplants.com
+        />sprout&grow@greenplants.com
       </p>
 
       <!-- External link -->
@@ -202,7 +208,7 @@
             class="icons-center"
             src="assets/hand-plant-icon-white.svg"
             alt="plant tool icon"
-          >Plant tool NC State University
+          />Plant tool NC State University
         </p>
       </a>
     </div>
@@ -217,13 +223,13 @@
             class="icons icon-facebook"
             src="assets/facebook-circle-logo.svg"
             alt="facebook icon"
-          ></a>
+        /></a>
         <a href="https://www.twitter.com"
           ><img
             class="icons icon-x"
             src="assets/new-logo-twitter.svg"
             alt="x icon"
-        ></a>
+        /></a>
       </div>
 
       <!-- Business hours -->
@@ -240,5 +246,4 @@
       </div>
     </div>
   </footer>
-
 </html>
