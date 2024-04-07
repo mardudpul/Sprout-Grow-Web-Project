@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sprout & Grow</title>
+    <title>Contact us</title>
 
     <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="css/style.css" />
@@ -23,12 +23,13 @@
   <header>
     <!-- logo header -->
     <aside class="logo-container">
-      <a href="index.html"
-        ><img
+      <a href="index.html">
+        <img
           class="logo-company"
           src="assets/logo-updated-round-300px.png"
           alt="Company logo Sprout & Grow"
-      /></a>
+        />
+      </a>
     </aside>
 
     <!-- navigation menu -->
@@ -50,99 +51,117 @@
           <a class="link-nav" href="community.html">Community</a>
         </li>
         <li class="nav-li">
-          <a class="link-nav" href="contact-us.html">Contact us</a>
+          <a class="link-nav" href="contact-us-form.html">Contact us</a>
         </li>
       </ul>
     </nav>
-
-    <!-- welcome message in the header -->
-    <div class="welcome-msg">
-      <h1>Welcome to your happy place</h1>
-      <img
-        class="raleigh-img"
-        src="assets/raleigh-img.png"
-        alt="raleigh nc image"
-      />
-      <p>
-        We are a greenhouse nursery in Raleigh, North Carolina<br />
-        specializing in high-quality <i>organic plants.</i>
-      </p>
-    </div>
   </header>
 
-  <body>  
-    <!-- sale section -->
-    <section class="sale-section">
-      <h2>
-        Sale of the month
-        <img
-          class="sale-img"
-          src="assets/tulips-sale-pic.jpeg"
-          alt="tulips of different colors"
-        >
-      </h2>
-      <p class="text-left-align">
-        <b>Tulips are in bloom!</b><br />
-        Don't miss the opportunity to come and pick your own tulips and receive
-        a 20% discount on your total purchase.
-        <!-- external link to google maps -->
-        <a class="external-link-maps" href="https://www.google.com/maps"
-          >Visit our store.</a
-        >
-      </p>
+  <body>
+    <section class="form-section">
+      
+      <!-- Form section -->
+      <h1><img class="leaf-icon" src="assets/leaf-icon.svg" alt="leaf icon">Contact us</h1>
+      <hr>
+      <br>
 
-      <!-- external link NC State University resources -->
-      <a
-        class="external-link-tulips"
-        href="https://plants.ces.ncsu.edu/plants/tulipa/"
-      >
-        <h3 class="text-left-align">
-          Learn about tulips here
-          <img
-            class="tulip-icon"
-            src="assets/tulip-icon.svg"
-            alt="tulip icon"
-          >
-        </h3>
-      </a>
-    </section>
+      <form id="questions" method="post" action="">
 
-    <!-- inventory seccion -->
-    <section class="inventory">
-      <h2>Our latest inventory</h2>
-      <p>
-        Visit our location to buy our beautiful plants.<br />
-        You can find our most updated inventory here!
-      </p>
-      <aside class="inventory-pics-flex">
-        <div>
-          <h3>Indoor Plants</h3>
-          <!-- picture with link to catalog -->
-          <a href="indoor-plants.html">
-            <img
-              class="link-inv"
-              src="assets/indoor-plants-resized.jpg"
-              alt="indoor plants in a living room"
-            >
-          </a>
-        </div>
-        <div>
-          <h3>Outdoor Plants</h3>
-          <!-- picture with link to catalog -->
-          <a href="outdoor-plants.html">
-            <img
-              class="link-inv"
-              src="assets/starters-1-resized.jpg"
-              alt="small starters plant"
-            >
-          </a>
-        </div>
-      </aside>
+        <!-- Text boxes 3 -->
+        <label for="name">Full Name</label><br>
+        <input type="text" name="name" id="name">
+        
+        <br>
+    
+        <label for="email">Email<sup>*</sup></label><br>
+        <input 
+          type="email" 
+          name="email" 
+          id="email"
+          multiple requiered
+          placeholder="me@example.com"
+        >
+        <br>
+
+        <label for="phone">Phone</label><br>
+        <input type="tel" name="phone" id="phone">
+        
+        <br>
+
+        <!-- text area -->
+        <label for="write">How can we help?</label>
+        <br>
+        <textarea id="write" name="write"></textarea>
+        <br>
+        
+        <!--Radio buttons 2 -->   
+        <fieldset>
+          <legend>Are you a current client?</legend>
+      
+          <input type="radio" name="questions" value="yes" id="yes" checked>
+          <label for="yes">Yes</label><br><br>
+        
+          <input type="radio" name="questions" value="no" id="no">
+          <label for="no">Not yet</label><br>
+        </fieldset><br>
+      
+        <!--Checkbox selection 4 -->        
+        <fieldset>
+          <legend>Areas of interest?</legend>
+      
+          <input type="checkbox" name="interest" value="volunteer" id="volunteer" checked>
+          <label for="volunteer">Volunteer</label><br>
+          <input type="checkbox" name="interest" value="learn" id="learn">
+          <label for="learn">Learning</label><br>
+          <input type="checkbox" name="interest" value="seeking-job" id="seeking-job">
+          <label for="seeking-job">Seeking job</label><br>
+          <input type="checkbox" name="interest" value="get-social" id="get-social">
+          <label for="get-social">Get social</label><br>
+        </fieldset><br>
+      
+        <hr>
+
+        <!-- Dropdown selection list -->
+        <label for="plants">What is your favorite type of plant?</label>
+        <select name="plants" id="plants">               
+          <optgroup label="Indoor Plants">
+            <option value="cactus">Cactus</options>
+            <option value="suculents">Suculents</options>
+            <option value="money-tree">Money Tree</options>
+          </optgroup>
+        
+          <optgroup label="Outdoor Plants">
+            <option value="perennial">Perennial Flowers</options>
+            <option value="annual">Annual Flowers</options>
+            <option value="fruit">Fruit Tree</options>
+          </optgroup>
+         
+          <option value="none">None</options>
+        </select>
+        <br><br>
+    
+        <hr><br>
+      
+        <!-- Radio buttons 2 -->
+        <fieldset>
+          <legend>Are you interest in receiving email about our upcoming events?</legend>
+  
+          <input type="radio" name="news" value="yes" id="yes" checked>
+          <label for="yes">Yes</label><br>
+          
+          <br<br>
+          
+          <input type="radio" name="news" value="no" id="no">
+          <label for="no">No thanks</label><br><br>
+        </fieldset><br>
+      
+        <!-- Sumbit button -->
+        <button type="submit">Submit</button>
+      </form>
     </section>
   </body>
 
   <!-- Footer section -->
-
   <footer class="footer-flex">
     <!-- footer left flex item -->
     <div class="footer-left">
@@ -152,13 +171,13 @@
           class="logo-footer"
           src="assets/Logo-updated-small.png"
           alt="Company logo"
-        >
+        />
       </a>
       <!-- navigation menu footer -->
       <div class="footer-links">
-        <a href="about.html">About</a> |
+        <a href="about.html">About</a> | 
         <a href="plants.html">Plants</a> |
-        <a href="community.html">Community</a>  |
+        <a href="community.html">Community</a> |
         <a href="contact-us-form.html">Contact us</a>
       </div>
     </div>
@@ -172,7 +191,7 @@
           class="icons-center"
           src="assets/location-white.svg"
           alt="map icon"
-        >Downtown, Raleigh, NC
+        />Downtown, Raleigh, NC
       </p>
       <!-- phone icon  -->
       <p class="contact-text-font-size">
@@ -180,7 +199,7 @@
           class="icons-center"
           src="assets/phone-icon-white.svg"
           alt="phone icon"
-        >+1-919-00-00
+        />+1-919-00-00
       </p>
       <!-- email icon -->
       <p class="contact-text-font-size">
@@ -188,7 +207,7 @@
           class="icons-center"
           src="assets/email-icon-white.svg"
           alt="email icon"
-        >sprout&grow@greenplants.com
+        />sprout&grow@greenplants.com
       </p>
 
       <!-- External link -->
@@ -202,7 +221,7 @@
             class="icons-center"
             src="assets/hand-plant-icon-white.svg"
             alt="plant tool icon"
-          >Plant tool NC State University
+          />Plant tool NC State University
         </p>
       </a>
     </div>
@@ -217,13 +236,13 @@
             class="icons icon-facebook"
             src="assets/facebook-circle-logo.svg"
             alt="facebook icon"
-          ></a>
+        /></a>
         <a href="https://www.twitter.com"
           ><img
             class="icons icon-x"
             src="assets/new-logo-twitter.svg"
             alt="x icon"
-        ></a>
+        /></a>
       </div>
 
       <!-- Business hours -->
@@ -240,5 +259,4 @@
       </div>
     </div>
   </footer>
-
 </html>
