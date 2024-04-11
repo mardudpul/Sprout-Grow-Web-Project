@@ -119,6 +119,7 @@ header {
 
 .external-link-maps{
     text-decoration: none;
+    display: grid;
 }
 
 .raleigh-img {
@@ -192,7 +193,7 @@ header {
 
 /* Footer */
 
-.logo-footer{
+.logo-footer {
     max-width: 100%;
     height: auto;
     padding: 20px;
@@ -286,6 +287,19 @@ header {
     font-size: 1rem;
     margin: 2px;
     color: #fff;
+}
+
+/* media query homepage */
+/* WIP check @media */
+
+@media (max-width: 650px) {
+    .btn-home {
+        width: auto;
+        align-self: center;
+
+    }
+
+       
 }
 
 
@@ -418,6 +432,9 @@ header {
         padding: 0;
     }
 
+    .btn-about {
+        width: auto;
+    }
     
  }
 
@@ -536,7 +553,7 @@ input[type="text"], input[type="email"], input[type="text"], input[type="tel"], 
     width: 30em;
   }
 
-  /* Button form style */
+  /* Button Form style */
 
   button {
     -webkit-appearance: none;
@@ -557,7 +574,6 @@ input[type="text"], input[type="email"], input[type="text"], input[type="tel"], 
     transition-duration: 0.4s;
     width: 25%;
   }
-
 
   button:focus {
     border: 2px solid yellow;
@@ -609,7 +625,111 @@ input[type="text"], input[type="email"], input[type="text"], input[type="tel"], 
     }
 
   }
+
+  /* Community page */
+
+  /* main message community event */
+  .community-msg {
+    padding: 50px;
+    box-shadow: 0 2px 4px #A6CD37;
+  }
+
+  .img-community {
+    max-width: 100%;
+    width: auto;
+    padding-top: 20px;
+  }  
+
+    /* icon in the heading of the garden gatherings  */
+   .icon-events {
+    width: 70px;
+    height: 70px;
+   }
+
+   .img-gar-gadering {
+    display: flex;
+    justify-content: space-evenly;
+   }
+
+   .img-small-events {
+    max-width: 14%;
+    height: auto;
+    border: 5px solid #A6CD37;
+   }
+
+ /* Accordeon sections */
+
+  .events-section {
+    padding: 20px;
+    text-align: left;
+  }
+
+  .arrow-down-white {
+    width: 25px;
+    padding-left: 5px;
+  }
+
+   .events-section h1, h2 {
+    text-align: center;
+  }
+
+  /* Hide content by default */
+ .content {
+    display: none;
+  }
+  
+  /* To hide the checkboxes */
+  input#toggle1, input#toggle2  {
+    opacity: 0;
+    width:0;
+    margin: 0;
+  }
+   
+  /* Show content when corresponding input is checked */
+  input#toggle1[type="checkbox"]:checked ~ 
+  .content {
+    display: block;
+  }
+
+  input#toggle2[type="checkbox"]:checked ~ 
+  .content {
+    display: block;
+  }
+  
+  /* Style accordion labels */
+  label.style-label {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    background-color:#000;
+    color: #fff;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 2px solid #A6CD37;
+  }
+  
+  /* Optional styles */
+  label.style-label:hover {
+    background-color: #2B4A39;
+    color: #fff;
+  }
+  
+  .content p {
+    margin: 0;
+    padding: 10px;
+  }
+  
     
+  /* media query for the Community page */ 
+
+  @media (max-width: 750px) {
+
+    .img-small-events {
+        display: none;
+    }
+
+    
+  }
   
 
  

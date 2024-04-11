@@ -56,91 +56,108 @@
     </nav>
 
     <!-- welcome message in the header -->
-    <div class="welcome-msg">
-      <h1>WIP</h1>
+    <div class="community-msg">
+      <h1>Come grow with us!</h1>
       <img
-        class="raleigh-img"
-        src="assets/raleigh-img.png"
-        alt="raleigh nc image"
+        class="img-community"
+        src="assets/people-planting-resized.jpg"
+        alt="people gardenin"
       />
       <p>
-        We are a greenhouse nursery in Raleigh, North Carolina<br />
-        specializing in high-quality <i>organic plants.</i>
+        Let's cultivate not just plants,
+        but also a sense of belonging and<br>
+        eco-conscious habits together.<br>
+        
       </p>
     </div>
   </header>
 
   <body>  
-    <!-- sale section -->
-    <section class="sale-section">
-      <h2>
-        Sale of the month
-        <img
-          class="sale-img"
-          src="assets/tulips-sale-pic.jpeg"
-          alt="tulips of different colors"
-        >
-      </h2>
-      <p class="text-left-align">
-        <b>Tulips are in bloom!</b><br />
-        Don't miss the opportunity to come and pick your own tulips and receive
-        a 20% discount on your total purchase.
-        <!-- external link to google maps -->
-        <a class="external-link-maps" href="https://www.google.com/maps"
-          >Visit our store.</a
-        >
-      </p>
+    <!-- Events section -->
+    <section class="events-section">
+     
+      <h1>
+        <img class="icon-events" src="assets/water-plants.svg" alt="watering plants icon">  
+        Garden gatherings     
+      </h1>
 
-      <!-- external link NC State University resources -->
-      <a
-        class="external-link-tulips"
-        href="https://plants.ces.ncsu.edu/plants/tulipa/"
-      >
-        <h3 class="text-left-align">
-          Learn about tulips here
-          <img
-            class="tulip-icon"
-            src="assets/tulip-icon.svg"
-            alt="tulip icon"
-          >
-        </h3>
-      </a>
-    </section>
+      <div class="img-gar-gadering">
+        <img class="img-small-events" src="assets/cactus-1-R.jpg" alt="hands and cactus">
+        <img class="img-small-events" src="assets/person-planting-resized.jpg" alt="person planting">
+        <img class="img-small-events" src="assets/hand-plants-resized.jpg" alt="hands and small plants">
+      </div>
+    
+      
+      <!-- Accordion container -->
+      <div class="accordion">
+        
+        <!-- April events -->
+        <input type="checkbox" id="toggle1">
+        <label class="style-label" for="toggle1">
+          <h2>April 2024
+            <img class="arrow-down-white" 
+            src="assets/arrow-down-white.svg" 
+            alt="arrow down icon">
+          </h2>
+        </label>
+        <div class="content">
+          <fieldset>
+            <legend>
+              <p><b>Basic Gardening class at 6:00&nbsp;PM</b></p>
+            </legend>
+            <ul>
+              <li><p>April 20th</p></li>
+              <li><p>April 26th</p></li>
+              <li><p>April 30th</p></li>
+            </ul>
+          </fieldset>
 
-    <!-- inventory seccion -->
-    <section class="inventory">
-      <h2>Our latest inventory</h2>
-      <p>
-        Visit our location to buy our beautiful plants.<br />
-        You can find our most updated inventory here!
-      </p>
-      <aside class="inventory-pics-flex">
-        <div>
-          <h3>Indoor Plants</h3>
-          <!-- picture with link to catalog -->
-          <a href="indoor-plants.html">
-            <img
-              class="link-inv"
-              src="assets/indoor-plants-resized.jpg"
-              alt="indoor plants in a living room"
-            >
-          </a>
+          <fieldset>
+            <legend>
+              <p><b>Wine and Plants at 4:00&nbsp;PM</b></p>
+            </legend>
+            <ul>
+              <li><p>April 19th</p></li>
+            </ul>
+          </fieldset>
         </div>
-        <div>
-          <h3>Outdoor Plants</h3>
-          <!-- picture with link to catalog -->
-          <a href="outdoor-plants.html">
-            <img
-              class="link-inv"
-              src="assets/starters-1-resized.jpg"
-              alt="small starters plant"
-            >
-          </a>
-        </div>
-      </aside>
-    </section>
-  </body>
 
+        <!-- May events -->
+        <input type="checkbox" id="toggle2">
+        <label class="style-label" for="toggle2">
+            <h2>May 2024 
+              <img class="arrow-down-white" src="assets/arrow-down-white.svg" alt="arrow down icon">
+            </h2>
+        </label>
+        
+        <div class="content">
+        
+          <fieldset>
+            <legend>
+              <p><b>Basic gardening class at 6:00&nbsp;PM</b></p>
+            </legend>
+            <ul>
+              <li><p>May 16th</p></li>
+              <li><p>May 23th</p></li>
+              <li><p>May 30th</p></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>
+              <p><b>Volunteer Training at 2:00&nbsp;PM</b></p>
+            </legend>
+            <ul>
+              <li><p>May 6th</p></li>
+            </ul>
+          </fieldset>
+        </div>
+              
+      </div>
+    </section> 
+
+
+
+    
   <!-- Footer section -->
 
   <footer class="footer-flex">
