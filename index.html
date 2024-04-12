@@ -6,7 +6,7 @@
       attribute values." however, I'm having a hard time configuring Prettier to remove the slash
     in the code-->
 
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sprout & Grow</title>
 
@@ -30,7 +30,7 @@
     <!-- logo header -->
     <aside class="logo-container">
           
-       <a href="index.html">
+      <a href="index.html">
         <img
           class="logo-company"
           src="assets/Logo-updated-small.png"
@@ -43,8 +43,6 @@
       <input type="search" name="search" id="search"><br><br>
       
     </aside>
-
-   
 
     <!-- navigation menu -->
     <nav>
@@ -73,12 +71,12 @@
 
     <!-- welcome message -->
     <div class="welcome-msg">
-       <h1>Welcome to your happy place!</h1>
+      <h1>Welcome to your happy place!</h1>
       <img
         class="raleigh-img"
         src="assets/raleigh-image.jpeg"
         alt="raleigh nc image"
-      />
+      >
       <p>
         We are a greenhouse nursery in Raleigh, North Carolina<br>
         specializing in high-quality <i>organic plants.</i>
@@ -86,6 +84,9 @@
     </div>
   </header>
 
+    <!-- error in HTML validator "Start tag body seen but an element of the same type was already open."
+      I don't see any other <body> tag-->
+  
   <body>
     <!-- sale section -->
     <section class="sale-section">
@@ -100,11 +101,12 @@
       </h2>
       <p class="text-left-align">
         <b>Tulips are in bloom!</b><br>
-        Don't miss the opportunity to come and pick your own tulips and receive
+        Don't miss the opportunity to come and pick<br>
+        your own tulips and receive
         a 20% discount on your total purchase.
         
       </p>
-     
+    
       <!-- external link NC State University resources -->
       <a
         class="external-link-tulips"
@@ -119,10 +121,13 @@
           >
         </h3>
       </a>
-      <p><!-- external link to google maps -->
-        <a class="external-link-maps" href="https://www.google.com/maps">
-          <button class="btn-home">Visit our&nbsp;store</button>
-        </a></p>
+      <p>
+        <a 
+          class="external-link-maps btn-home" 
+          href="https://www.google.com/maps">
+          Visit our&nbsp;store
+        </a>
+      </p>
     </section>
 
     <!-- inventory seccion -->
@@ -132,104 +137,106 @@
     <!-- HTML validator is giving an error with my 
     <footer> tag. I don't find what I have wrong. I closed my tag correctly -->
 
-  <!-- Footer section -->
+    <!-- Footer section -->
       
-<footer class="footer-flex">
-  <!-- footer left flex item -->
-  <div class="footer-left">
-    <!--logo footer smaller  -->
-    <a href="index.html">
-      <img
-        class="logo-footer"
-        src="assets/Logo-updated-small.png"
-        alt="Company logo"
-      />
-    </a>
-    <!-- navigation menu footer -->
-    <div class="footer-links">
-      <a href="index.html">Home</a> | 
-      <a href="about.html">About</a> | 
-      <a href="plants.html">Plants</a> |
-      <a href="community.html">Community</a> |
-      <a href="contact-us-form.html">Contact us</a>
+  <footer class="footer-flex">
+    <!-- footer left flex item -->
+    <div class="footer-left">
+      <!--logo footer smaller  -->
+      <a href="index.html">
+        <img
+          class="logo-footer"
+          src="assets/Logo-updated-small.png"
+          alt="Company logo"
+        >
+      </a>
+      <!-- navigation menu footer -->
+      <div class="footer-links">
+        <a href="index.html">Home</a> | 
+        <a href="about.html">About</a> | 
+        <a href="plants.html">Plants</a> |
+        <a href="community.html">Community</a> |
+        <a href="contact-us-form.html">Contact us</a>
+      </div>
     </div>
-  </div>
 
-  <!-- footer center flex item -->
-  <div class="footer-center">
-    <h3>Contact us</h3>
-    <!-- location icon -->
-    <p class="contact-text-font-size">
-      <img
-        class="icons-center"
-        src="assets/location-white.svg"
-        alt="map icon"
-      />Downtown, Raleigh, NC
-    </p>
-    <!-- phone icon  -->
-    <p class="contact-text-font-size">
-      <img
-        class="icons-center"
-        src="assets/phone-icon-white.svg"
-        alt="phone icon"
-      />+1-919-00-00
-    </p>
-    <!-- email icon -->
-    <p class="contact-text-font-size">
-      <img
-        class="icons-center"
-        src="assets/email-icon-white.svg"
-        alt="email icon"
-      />sprout&grow@greenplants.com
-    </p>
-
-    <!-- External link -->
-    <h3>Resources</h3>
-    <a
-      class="ext-link-decor"
-      href="https://plants.ces.ncsu.edu/find_a_plant/"
-    >
-      <p class="external-link">
+    <!-- footer center flex item -->
+    <div class="footer-center">
+      <h3>Contact us</h3>
+      <!-- location icon -->
+      <p class="contact-text-font-size">
         <img
           class="icons-center"
-          src="assets/hand-plant-icon-white.svg"
-          alt="plant tool icon"
-        />Plant tool NC State University
+          src="assets/location-white.svg"
+          alt="map icon"
+        >Downtown, Raleigh, NC
       </p>
-    </a>
-  </div>
-
-  <!-- footer right flex item -->
-  <div class="footer-right">
-    <h3>Connect with us</h3>
-
-    <div class="media-icons">
-      <a href="https://www.facebook.com"
-        ><img
-          class="icons icon-facebook"
-          src="assets/facebook-circle-logo.svg"
-          alt="facebook icon"
-      /></a>
-      <a href="https://www.twitter.com"
-        ><img
-          class="icons icon-x"
-          src="assets/new-logo-twitter.svg"
-          alt="x icon"
-      /></a>
-    </div>
-
-    <!-- Business hours -->
-    <div class="opening-hours">
-      <h3>Open Hours</h3>
-      <p class="hours-text-font-size">
-        Monday-Friday 9 a.m. - 5 p.m.<br />
-        Saturdays 9 a.m. - 3 p.m.<br />
-        Sundays <b> Closed </b>
+      <!-- phone icon  -->
+      <p class="contact-text-font-size">
+        <img
+          class="icons-center"
+          src="assets/phone-icon-white.svg"
+          alt="phone icon"
+        >+1-919-00-00
+      </p>
+      <!-- email icon -->
+      <p class="contact-text-font-size">
+        <img
+          class="icons-center"
+          src="assets/email-icon-white.svg"
+          alt="email icon"
+        >sprout&grow@greenplants.com
       </p>
 
-      <!-- company name small text -->
-      <p class="footer-company-name">Sprout & Grow © 2024</p>
+      <!-- External link -->
+      <h3>Resources</h3>
+      <a
+        class="ext-link-decor"
+        href="https://plants.ces.ncsu.edu/find_a_plant/"
+      >
+        <p class="external-link">
+          <img
+            class="icons-center"
+            src="assets/hand-plant-icon-white.svg"
+            alt="plant tool icon"
+          >Plant tool NC State University
+        </p>
+      </a>
     </div>
-  </div>
-</footer>
+
+    <!-- footer right flex item -->
+    <div class="footer-right">
+      <h3>Connect with us</h3>
+
+      <div class="media-icons">
+        <a href="https://www.facebook.com"
+          ><img
+            class="icons icon-facebook"
+            src="assets/facebook-circle-logo.svg"
+            alt="facebook icon"
+          >
+        </a>
+        <a href="https://www.twitter.com">
+          <img
+            class="icons icon-x"
+            src="assets/new-logo-twitter.svg"
+            alt="x icon"
+          >
+        </a>
+      </div>
+
+      <!-- Business hours -->
+      <div class="opening-hours">
+        <h3>Open Hours</h3>
+        <p class="hours-text-font-size">
+          Monday-Friday 9 a.m. - 5 p.m.<br>
+          Saturdays 9 a.m. - 3 p.m.<br>
+          Sundays <b> Closed </b>
+        </p>
+
+        <!-- company name small text -->
+        <p class="footer-company-name">Sprout & Grow © 2024</p>
+      </div>
+    </div>
+  </footer>
 </html>
