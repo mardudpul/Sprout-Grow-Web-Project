@@ -91,11 +91,16 @@ header {
     align-content: center;
 }
 
-/* logo header */
+/* /* logo header & search bar  */
 .logo-container {
     display: flex;  
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Wix Madefor Display", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
     
 }
 
@@ -105,13 +110,6 @@ header {
     padding: 20px;
 }
 
-/* search bar */
-
-.search-bar {
-  font-family: "Wix Madefor Display", sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;
-}
 
 /* Welcome message header */
 
