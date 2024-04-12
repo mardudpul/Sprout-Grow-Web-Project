@@ -126,6 +126,7 @@ header {
 .external-link-maps{
     text-decoration: none;
     display: grid;
+
 }
 
 .raleigh-img {
@@ -164,12 +165,53 @@ header {
 }
 
 .sale-img {
-    float: left;
+    float: right;
     clear: both;
     max-width: 100%;
     height: auto;
     margin-right: 30px;
+    border: 5px solid #A6CD37;
 }
+
+
+/* btn sale section */
+
+.btn-home {
+    display: block;
+    align-self: center;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #2B4A39;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 20px 0 20px 0;
+    transition-duration: 0.4s;
+    width: 25%;
+}
+
+.btn-home:focus {
+  border: 2px solid yellow;
+
+}
+
+.btn-home:hover {
+  background-color: white;
+  border: 2px solid #2B4A39;
+  color:#2B4A39;
+  font-weight: bold;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btn-home:active {
+  background-color: #A6CD37;
+  border: 2px solid #2B4A39;
+  color:#2B4A39;
+  font-weight: bold;
+  
+}
+
 
 
 /* Inventory section */
@@ -195,6 +237,7 @@ header {
     max-width: 100%;
     height: auto;
     margin-top: 10px;
+    border: 5px solid #A6CD37;
     
 }
 
@@ -296,8 +339,11 @@ header {
     color: #fff;
 }
 
+
+
+
 /* media query homepage */
-/* WIP check @media */
+
 
 @media (max-width: 650px) {
     .btn-home {
@@ -330,6 +376,7 @@ header {
       max-width: 100%;
       height: auto;
       margin: 20px 0 20px 0;
+      border: 5px solid #A6CD37;
     }
 
     /* text in the sale section */
@@ -358,6 +405,7 @@ header {
     float: inherit;
     max-width: 100%;
     height: auto;
+    border: 5px solid #A6CD37;
 }
 
   
@@ -376,6 +424,7 @@ header {
     height: auto;
     margin-right: 40px;
     margin-left: 40px;
+    border: 5px solid #A6CD37;
     
  }
 
@@ -405,6 +454,7 @@ header {
     max-width: 100%;
     height: auto;
     margin-right: 27px;
+    border: 5px solid #A6CD37;
     
  }
 
@@ -441,7 +491,7 @@ header {
         padding: 0;
     }
 
-    .btn-about {
+    .btn-home {
         width: auto;
     }
     
@@ -527,11 +577,12 @@ header {
  .form-section  {
     font-family: "Wix Madefor Display", sans-serif;
     text-align: left;
-    padding: 20px;
+    padding: 50px;
  }
 
  .form-section h1 {
     font-family: "Rufina", serif;
+    text-align: center;
  } 
 
  button, input, select, textarea {
