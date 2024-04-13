@@ -758,7 +758,11 @@ input[type="text"], input[type="email"], input[type="text"], input[type="tel"], 
   }
 
   /* Hide content by default */
- .content {
+ .content-1 {
+    display: none;
+  }
+
+ .content-2 {
     display: none;
   }
   
@@ -770,13 +774,11 @@ input[type="text"], input[type="email"], input[type="text"], input[type="tel"], 
   }
    
   /* Show content when corresponding input is checked */
-  input#toggle1[type="checkbox"]:checked ~ 
-  .content {
+  input#toggle1[type="checkbox"]:checked ~ .content-1 {
     display: block;
   }
 
-  input#toggle2[type="checkbox"]:checked ~ 
-  .content {
+  input#toggle2[type="checkbox"]:checked ~ .content-2 {
     display: block;
   }
   
