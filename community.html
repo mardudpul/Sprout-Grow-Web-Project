@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Community</title>
 
-    <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community</title>
 
-    <!-- Gooogle Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Gooogle Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
   <header>
     <!-- logo header -->
     <aside class="logo-container">
       <a href="index.html">
-        <img
-          class="logo-company"
-          src="assets/Logo-updated-small.png"
-          alt="Company logo Sprout & Grow"
-        >
+        <img class="logo-company" src="assets/Logo-updated-small.png" alt="Company logo Sprout & Grow">
       </a>
 
       <!-- Search bar -->
@@ -36,7 +30,7 @@
       <input type="search" name="search" id="search"><br><br>
     </aside>
 
- 
+
     <!-- navigation menu -->
     <nav>
       <ul class="nav-menu">
@@ -63,95 +57,106 @@
     </nav>
   </header>
 
-  <body>  
-    <!-- Events section -->
-    <section class="events-section">
-      
-        <h1>
-          Come grow with us! 
-        </h1>
-        <p class="event-center-text">
-          Let's cultivate not just plants,
-          but also a sense of belonging and<br>
-          eco-conscious habits together.<br>
-        </p>
-      
-      <div class="img-gar-gadering">
-        <img class="img-small-events" src="assets/cactus-1-R.jpg" alt="hands and cactus">
-        <img class="img-small-events" src="assets/person-planting-resized.jpg" alt="person planting">
-        <img class="img-small-events" src="assets/hand-plants-resized.jpg" alt="hands and small plants">
+  <!-- Events section -->
+  <section class="events-section">
+
+    <h1>
+      Come grow with us!
+    </h1>
+    <p class="event-center-text">
+      Let's cultivate not just plants,
+      but also a sense of belonging and<br>
+      eco-conscious habits together.<br>
+    </p>
+
+    <div class="img-gar-gadering">
+      <img class="img-small-events" src="assets/cactus-1-R.jpg" alt="hands and cactus">
+      <img class="img-small-events" src="assets/person-planting-resized.jpg" alt="person planting">
+      <img class="img-small-events" src="assets/hand-plants-resized.jpg" alt="hands and small plants">
+    </div>
+
+    <!-- Accordion container -->
+    <div class="accordion">
+
+      <!-- April events -->
+      <input type="checkbox" id="toggle1">
+      <label class="style-label" for="toggle1">
+        April 2024
+        <img class="arrow-down-white" src="assets/arrow-down-white.svg" alt="arrow down icon">
+      </label>
+      <div class="content">
+        <fieldset>
+          <legend class="accordion-subtitles">
+            <b>Basic Gardening Class at 6:00&nbsp;PM</b>
+          </legend>
+          <ul>
+            <li>
+              <p>April 20th</p>
+            </li>
+            <li>
+              <p>April 26th</p>
+            </li>
+            <li>
+              <p>April 30th</p>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend class="accordion-subtitles">
+            <b>Wine and Plants at 4:00&nbsp;PM</b>
+          </legend>
+          <ul>
+            <li>
+              <p>April 19th</p>
+            </li>
+          </ul>
+        </fieldset>
       </div>
-    
-       <!-- Accordion container -->
-      <div class="accordion">
-        
-        <!-- April events -->
-        <input type="checkbox" id="toggle1">
-        <label class="style-label" for="toggle1">
-          <h2>April 2024
-            <img class="arrow-down-white" 
-            src="assets/arrow-down-white.svg" 
-            alt="arrow down icon">
-          </h2>
-        </label>
-        <div class="content">
-          <fieldset>
-            <legend>
-              <p><b>Basic Gardening Class at 6:00&nbsp;PM</b></p>
-            </legend>
-            <ul>
-              <li><p>April 20th</p></li>
-              <li><p>April 26th</p></li>
-              <li><p>April 30th</p></li>
-            </ul>
-          </fieldset>
 
-          <fieldset>
-            <legend>
-              <p><b>Wine and Plants at 4:00&nbsp;PM</b></p>
-            </legend>
-            <ul>
-              <li><p>April 19th</p></li>
-            </ul>
-          </fieldset>
-        </div>
+      <!-- May events -->
+      <input type="checkbox" id="toggle2">
+      <label class="style-label" for="toggle2">
+        May 2024
+        <img class="arrow-down-white" src="assets/arrow-down-white.svg" alt="arrow down icon">
+      </label>
 
-        <!-- May events -->
-        <input type="checkbox" id="toggle2">
-        <label class="style-label" for="toggle2">
-            <h2>May 2024 
-              <img class="arrow-down-white" src="assets/arrow-down-white.svg" alt="arrow down icon">
-            </h2>
-        </label>
-        
-        <div class="content">
-        
-          <fieldset>
-            <legend>
-              <p><b>Basic Gardening Class at 6:00&nbsp;PM</b></p>
-            </legend>
-            <ul>
-              <li><p>May 16th</p></li>
-              <li><p>May 23th</p></li>
-              <li><p>May 30th</p></li>
-            </ul>
-          </fieldset>
-          <fieldset>
-            <legend>
-              <p><b>Volunteer's Training at 2:00&nbsp;PM</b></p>
-            </legend>
-            <ul>
-              <li><p>May 6th</p></li>
-            </ul>
-          </fieldset>
-        </div>
-              
+      <div class="content">
+
+        <fieldset>
+          <legend class="accordion-subtitles">
+            <b>Basic Gardening Class at 6:00&nbsp;PM</b>
+          </legend>
+          <ul>
+            <li>
+              <p>May 16th</p>
+            </li>
+            <li>
+              <p>May 23th</p>
+            </li>
+            <li>
+              <p>May 30th</p>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend class="accordion-subtitles">
+            <b>Volunteer's Training at 2:00&nbsp;PM</b>
+          </legend>
+          <ul>
+            <li>
+              <p>May 6th</p>
+            </li>
+          </ul>
+        </fieldset>
       </div>
-    </section> 
+
+    </div>
+  </section>
 
 
 
-    
+
   <!-- Footer section -->
 
   <footer class="footer-flex">
@@ -159,18 +164,14 @@
     <div class="footer-left">
       <!--logo footer smaller  -->
       <a href="index.html">
-        <img
-          class="logo-footer"
-          src="assets/Logo-updated-small.png"
-          alt="Company logo"
-        >
+        <img class="logo-footer" src="assets/Logo-updated-small.png" alt="Company logo">
       </a>
       <!-- navigation menu footer -->
       <div class="footer-links">
-        <a href="index.html">Home</a> | 
+        <a href="index.html">Home</a> |
         <a href="about.html">About</a> |
         <a href="plants.html">Plants</a> |
-        <a href="community.html">Community</a>  |
+        <a href="community.html">Community</a> |
         <a href="contact-us-form.html">Contact us</a>
       </div>
     </div>
@@ -180,41 +181,23 @@
       <h3>Contact us</h3>
       <!-- location icon -->
       <p class="contact-text-font-size">
-        <img
-          class="icons-center"
-          src="assets/location-white.svg"
-          alt="map icon"
-        >Downtown, Raleigh, NC
+        <img class="icons-center" src="assets/location-white.svg" alt="map icon">Downtown, Raleigh, NC
       </p>
       <!-- phone icon  -->
       <p class="contact-text-font-size">
-        <img
-          class="icons-center"
-          src="assets/phone-icon-white.svg"
-          alt="phone icon"
-        >+1-919-00-00
+        <img class="icons-center" src="assets/phone-icon-white.svg" alt="phone icon">+1-919-00-00
       </p>
       <!-- email icon -->
       <p class="contact-text-font-size">
-        <img
-          class="icons-center"
-          src="assets/email-icon-white.svg"
-          alt="email icon"
-        >sprout&grow@greenplants.com
+        <img class="icons-center" src="assets/email-icon-white.svg" alt="email icon">sprout&grow@greenplants.com
       </p>
 
       <!-- External link -->
       <h3>Resources</h3>
-      <a
-        class="ext-link-decor"
-        href="https://plants.ces.ncsu.edu/find_a_plant/"
-      >
+      <a class="ext-link-decor" href="https://plants.ces.ncsu.edu/find_a_plant/">
         <p class="external-link">
-          <img
-            class="icons-center"
-            src="assets/hand-plant-icon-white.svg"
-            alt="plant tool icon"
-          >Plant tool NC State University
+          <img class="icons-center" src="assets/hand-plant-icon-white.svg" alt="plant tool icon">Plant tool NC State
+          University
         </p>
       </a>
     </div>
@@ -224,26 +207,17 @@
       <h3>Connect with us</h3>
 
       <div class="media-icons">
-        <a href="https://www.facebook.com"
-          ><img
-            class="icons icon-facebook"
-            src="assets/facebook-circle-logo.svg"
-            alt="facebook icon"
-          ></a>
-        <a href="https://www.twitter.com"
-          ><img
-            class="icons icon-x"
-            src="assets/new-logo-twitter.svg"
-            alt="x icon"
-        ></a>
+        <a href="https://www.facebook.com"><img class="icons icon-facebook" src="assets/facebook-circle-logo.svg"
+            alt="facebook icon"></a>
+        <a href="https://www.twitter.com"><img class="icons icon-x" src="assets/new-logo-twitter.svg" alt="x icon"></a>
       </div>
 
       <!-- Business hours -->
       <div class="opening-hours">
         <h3>Open Hours</h3>
         <p class="hours-text-font-size">
-          Monday-Friday 9 a.m. - 5 p.m.<br />
-          Saturdays 9 a.m. - 3 p.m.<br />
+          Monday-Friday 9 a.m. - 5 p.m.<br>
+          Saturdays 9 a.m. - 3 p.m.<br>
           Sundays <b> Closed </b>
         </p>
 
@@ -252,5 +226,6 @@
       </div>
     </div>
   </footer>
+</body>
 
 </html>
