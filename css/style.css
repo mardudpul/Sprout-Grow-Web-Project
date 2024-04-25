@@ -449,6 +449,7 @@ header {
   .why-section {
     text-align: left;
     padding: 20px;
+    overflow: hidden;
  }
 
   .why-section h1 {
